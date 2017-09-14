@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
         <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">        <style>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous"><style>
             .form-control:read-only{
                 background-color: white;
                 font-size: 1.2rem;}
@@ -25,395 +25,254 @@
 
 
 
+
+
 <!-- Pizza Options -->
 <div class="container">
 
-    <!-- Row 1 -->
+
+
+    <!-- Row 1 --><!-- Size -->
     <div class="row">
-
-
-            <!-- Size -->
-            <div class="col-lg-3">
-                    <div class="card-header text-center"><strong>Pizza Size:</strong></div>
-
-                    <div class="input-group">
-                        <span class="input-group-addon">
-                            <input type="radio" name="size" checked>
-                        </span>
-                            <input type="text" class="form-control" value="Personal" readonly>
+        <div class="col">
+            <div class="card">
+                <div class="card-block">
+                    <h3 class="card-title text-center">Pizza Size</h3>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <div class="btn-group" data-toggle="buttons">
+                        <label class="btn btn-primary active">
+                            <input type="radio" name="size" autocomplete="off" checked> Personal
+                        </label>
+                        <label class="btn btn-primary">
+                            <input type="radio" name="size" autocomplete="off"> Medium
+                        </label>
+                        <label class="btn btn-primary">
+                            <input type="radio" name="size" autocomplete="off"> Large
+                        </label>
+                        <label class="btn btn-primary">
+                            <input type="radio" name="size" autocomplete="off"> Extra Large
+                        </label>
                     </div>
-
-                    <div class="input-group">
-                        <span class="input-group-addon">
-                            <input type="radio" name="size">
-                        </span>
-                            <input type="text" class="form-control" value="Medium" readonly>
-                    </div>
-
-                    <div class="input-group">
-                        <span class="input-group-addon">
-                            <input type="radio" name="size">
-                        </span>
-                            <input type="text" class="form-control" value="Large" readonly>
-                    </div>
-
-                    <div class="input-group">
-                        <span class="input-group-addon">
-                            <input type="radio" name="size">
-                        </span>
-                            <input type="text" class="form-control" value="Extra Large" readonly>
-                    </div>
+                </div>
             </div>
-            <!-- /Size -->
-
-
-            <!-- Meat -->
-            <div class="col-lg-3">
-                    <div class="card-header text-center"><strong>Meat Toppings:</strong></div>
-
-                    <div class="input-group">
-                        <span class="input-group-addon">
-                            <input type="checkbox" name="meat">
-                        </span>
-                            <input type="text" class="form-control" value="Pepperoni" readonly>
-                    </div>
-
-                    <div class="input-group">
-                        <span class="input-group-addon">
-                            <input type="checkbox" name="meat">
-                        </span>
-                            <input type="text" class="form-control" value="Sausage" readonly>
-                    </div>
-
-                    <div class="input-group">
-                        <span class="input-group-addon">
-                            <input type="checkbox" name="meat">
-                        </span>
-                            <input type="text" class="form-control" value="Canadian Bacon" readonly>
-                    </div>
-
-                    <div class="input-group">
-                        <span class="input-group-addon">
-                            <input type="checkbox" name="meat">
-                        </span>
-                            <input type="text" class="form-control" value="Ground Beef" readonly>
-                    </div>
-
-                    <div class="input-group">
-                        <span class="input-group-addon">
-                            <input type="checkbox" name="meat">
-                        </span>
-                            <input type="text" class="form-control" value="Anchovy" readonly>
-                    </div>
-
-
-                    <div class="input-group">
-                        <span class="input-group-addon">
-                            <input type="checkbox" name="meat">
-                        </span>
-                            <input type="text" class="form-control" value="Chicken" readonly>
-                    </div>
-            </div>
-            <!-- /Meat -->
-
-
-
-
-            <!-- Non-Meat -->
-            <div class="col-lg-3">
-                    <div class="card-header text-center"><strong>Non-Meat Toppings:</strong></div>
-
-                    <div class="input-group">
-                        <span class="input-group-addon">
-                            <input type="checkbox" name="non-meat">
-                        </span>
-                            <input type="text" class="form-control" value="Tomatoes" readonly>
-                    </div>
-
-                    <div class="input-group">
-                        <span class="input-group-addon">
-                            <input type="checkbox" name="non-meat">
-                        </span>
-                            <input type="text" class="form-control" value="Onions" readonly>
-                    </div>
-
-                    <div class="input-group">
-                        <span class="input-group-addon">
-                            <input type="checkbox" name="non-meat">
-                        </span>
-                            <input type="text" class="form-control" value="Olives" readonly>
-                    </div>
-
-                    <div class="input-group">
-                        <span class="input-group-addon">
-                            <input type="checkbox" name="non-meat">
-                        </span>
-                            <input type="text" class="form-control" value="Green Peppers" readonly>
-                    </div>
-
-                    <div class="input-group">
-                        <span class="input-group-addon">
-                            <input type="checkbox" name="non-meat">
-                        </span>
-                            <input type="text" class="form-control" value="Mushrooms" readonly>
-                    </div>
-
-                    <div class="input-group">
-                        <span class="input-group-addon">
-                            <input type="checkbox" name="non-meat">
-                        </span>
-                            <input type="text" class="form-control" value="Pineapple" readonly>
-                    </div>
-
-                    <div class="input-group">
-                        <span class="input-group-addon">
-                            <input type="checkbox" name="non-meat">
-                        </span>
-                            <input type="text" class="form-control" value="Spinach" readonly>
-                    </div>
-
-                    <div class="input-group">
-                        <span class="input-group-addon">
-                            <input type="checkbox" name="non-meat">
-                        </span>
-                            <input type="text" class="form-control" value="Jalapeno" readonly>
-                    </div>
-            </div>
-            <!-- /Non-Meat -->
-
-
-    <!-- </div> -->
-    <!-- /Row 1 -->
-
-
-
-    <!-- Row 2 -->
-    <!-- <div class="row"> -->
-
-
-            <!-- Cheese -->
-            <div class="col-lg-3">
-                    <div class="card-header text-center"><strong>Cheese:</strong></div>
-
-                    <div class="input-group">
-                        <span class="input-group-addon">
-                            <input type="radio" name="cheese" checked>
-                        </span>
-                            <input type="text" class="form-control" value="Regular" readonly>
-                    </div>
-
-                    <div class="input-group">
-                        <span class="input-group-addon">
-                            <input type="radio" name="cheese">
-                        </span>
-                            <input type="text" class="form-control" value="No Cheese" readonly>
-                    </div>
-
-                    <div class="input-group">
-                        <span class="input-group-addon">
-                            <input type="radio" name="cheese">
-                        </span>
-                            <input type="text" class="form-control" value="Extra Cheese" readonly>
-                    </div>
-            </div>
-            <!-- /Cheese -->
-
-
-
-
-            <!-- Crust -->
-            <div class="col-lg-3">
-                    <div class="card-header text-center"><strong>Crust:</strong></div>
-
-                    <div class="input-group">
-                        <span class="input-group-addon">
-                            <input type="radio" name="crust" checked>
-                        </span>
-                            <input type="text" class="form-control" value="Plain Crust" readonly>
-                    </div>
-
-                    <div class="input-group">
-                        <span class="input-group-addon">
-                            <input type="radio" name="crust">
-                        </span>
-                            <input type="text" class="form-control" value="Garlic Butter Crust" readonly>
-                    </div>
-
-                    <div class="input-group">
-                        <span class="input-group-addon">
-                            <input type="radio" name="crust">
-                        </span>
-                            <input type="text" class="form-control" value="Cheese Stuffed Crust" readonly>
-                    </div>
-
-                    <div class="input-group">
-                        <span class="input-group-addon">
-                            <input type="radio" name="crust">
-                        </span>
-                            <input type="text" class="form-control" value="Spicy Crust" readonly>
-                    </div>
-
-                    <div class="input-group">
-                        <span class="input-group-addon">
-                            <input type="radio" name="crust">
-                        </span>
-                            <input type="text" class="form-control" value="House Special Crust" readonly>
-                    </div>
-            </div>
-            <!-- /Crust -->
-
-
-
-            <!-- Sauce -->
-            <div class="col-lg-3">
-                    <div class="card-header text-center"><strong>Sauce:</strong></div>
-
-                    <div class="input-group">
-                        <span class="input-group-addon">
-                            <input type="radio" name="sauce" checked>
-                        </span>
-                            <input type="text" class="form-control" value="Marinara Sauce" readonly>
-                    </div>
-
-                    <div class="input-group">
-                        <span class="input-group-addon">
-                            <input type="radio" name="sauce">
-                        </span>
-                            <input type="text" class="form-control" value="White Sauce" readonly>
-                    </div>
-
-                    <div class="input-group">
-                        <span class="input-group-addon">
-                            <input type="radio" name="sauce">
-                        </span>
-                            <input type="text" class="form-control" value="Barbeque Sauce" readonly>
-                    </div>
-
-                    <div class="input-group">
-                        <span class="input-group-addon">
-                            <input type="radio" name="sauce">
-                        </span>
-                            <input type="text" class="form-control" value="No Sauce" readonly>
-                    </div>
-            </div>
-            <!-- /Sauce -->
-
-
-
-
-
+        </div>
     </div>
-    <!-- /Row 2 -->
+    <!-- /Row 1 --><!-- /Size -->
+
+
+<br>
+
+
+    <!-- Row 2 --><!-- Crust -->
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-block">
+                    <h3 class="card-title text-center">Crust</h3>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <div class="btn-group" data-toggle="buttons">
+                        <label class="btn btn-primary active">
+                            <input type="radio" name="crust" autocomplete="off" checked> Plain Crust
+                        </label>
+                        <label class="btn btn-primary">
+                            <input type="radio" name="crust" autocomplete="off"> Garlic Butter Crust
+                        </label>
+                        <label class="btn btn-primary">
+                            <input type="radio" name="crust" autocomplete="off"> Cheese Stuffed Crust
+                        </label>
+                        <label class="btn btn-primary">
+                            <input type="radio" name="crust" autocomplete="off"> Spicy Crust
+                        </label>
+                        <label class="btn btn-primary">
+                            <input type="radio" name="crust" autocomplete="off"> House Special Crust
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Row 2 --><!-- /Crust -->
+
+
+<br>
+
+
+    <!-- Row 3 --><!-- Cheese -->
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-block">
+                    <h3 class="card-title text-center">Cheese</h3>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <div class="btn-group" data-toggle="buttons">
+                        <label class="btn btn-primary active">
+                            <input type="radio" name="cheese" autocomplete="off" checked> Regular
+                        </label>
+                        <label class="btn btn-primary">
+                            <input type="radio" name="cheese" autocomplete="off"> No Cheese
+                        </label>
+                        <label class="btn btn-primary">
+                            <input type="radio" name="cheese" autocomplete="off"> Extra Cheese
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Row 3 --><!-- /Cheese -->
+
+
+<br>
+
+
+    <!-- Row 4 --><!-- Sauce -->
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-block">
+                    <h3 class="card-title text-center">Sauce</h3>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <div class="btn-group" data-toggle="buttons">
+                        <label class="btn btn-primary active">
+                            <input type="radio" name="sauce" autocomplete="off" checked> Marinara Sauce
+                        </label>
+                        <label class="btn btn-primary">
+                            <input type="radio" name="sauce" autocomplete="off"> White Sauce
+                        </label>
+                        <label class="btn btn-primary">
+                            <input type="radio" name="sauce" autocomplete="off"> Barbeque Sauce
+                        </label>
+                        <label class="btn btn-primary">
+                            <input type="radio" name="sauce" autocomplete="off"> No Sauce
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Row 4 --><!-- /Sauce -->
+
+
+<br>
+
+
+    <!-- Row 5 --><!-- Meat -->
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-block">
+                    <h3 class="card-title text-center">Meat Toppings</h3>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <div class="btn-group" data-toggle="buttons">
+                        <label class="btn btn-primary active">
+                            <input type="checkbox" checked autocomplete="off"> Pepperoni
+                        </label>
+                        <label class="btn btn-primary">
+                            <input type="checkbox" autocomplete="off"> Sausage
+                        </label>
+                        <label class="btn btn-primary">
+                            <input type="checkbox" autocomplete="off"> Canadian Bacon
+                        </label>
+                        <label class="btn btn-primary">
+                            <input type="checkbox" autocomplete="off"> Ground Beef
+                        </label>
+                        <label class="btn btn-primary">
+                            <input type="checkbox" autocomplete="off"> Anchovy
+                        </label>
+                        <label class="btn btn-primary">
+                            <input type="checkbox" autocomplete="off"> Chicken
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Row 5 --><!-- Meat -->
+
+
+<br>
+
+
+    <!-- Row 6 --><!-- Non-Meat -->
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-block">
+                    <h3 class="card-title text-center">Non-Meat Toppings</h3>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <div class="btn-group" data-toggle="buttons">
+                        <label class="btn btn-primary active">
+                            <input type="checkbox" checked autocomplete="off"> Tomatoes
+                        </label>
+                        <label class="btn btn-primary">
+                            <input type="checkbox" autocomplete="off"> Onions
+                        </label>
+                        <label class="btn btn-primary">
+                            <input type="checkbox" autocomplete="off"> Olives
+                        </label>
+                        <label class="btn btn-primary">
+                            <input type="checkbox" autocomplete="off"> Green Peppers
+                        </label>
+                        <label class="btn btn-primary">
+                            <input type="checkbox" autocomplete="off"> Mushrooms
+                        </label>
+                        <label class="btn btn-primary">
+                            <input type="checkbox" autocomplete="off"> Pineapple
+                        </label>
+                        <label class="btn btn-primary">
+                            <input type="checkbox" autocomplete="off"> Spinach
+                        </label>
+                        <label class="btn btn-primary">
+                            <input type="checkbox" autocomplete="off"> Jalapeno
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Row 6 --><!-- /Non-Meat -->
 
 </div>
-<!-- Pizza Options -->
-
-
-
-
-
-
-
-
-
+<!-- /Pizza Options -->
 
 
 <br>
-<br>
-<br>
-<br>
 
-<div class="btn-group" data-toggle="buttons">
-        <label class="btn btn-primary active">
-          <input type="radio" name="options" id="option1" autocomplete="off" checked> Radio 1 (preselected)
-        </label>
-        <label class="btn btn-primary">
-          <input type="radio" name="options" id="option2" autocomplete="off"> Radio 2
-        </label>
-        <label class="btn btn-primary">
-          <input type="radio" name="options" id="option3" autocomplete="off"> Radio 3
-        </label>
+
+<!-- Pizza Output -->
+
+<div class="card card-outline-primary mb-3 text-center">
+        <div class="card-block">
+          <blockquote class="card-blockquote">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+            <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+          </blockquote>
+        </div>
       </div>
 
+<!-- /Pizza Output -->
 
 
-            <!-- Cheese -->
-            <div class="col-lg-3">
-                    <div class="card-header text-center"><strong>Cheese:</strong></div>
+<!-- Order Buttons -->
+<div class="container">
+    <div class="row">
+        <div class="col">
+<button type="button" class="btn btn-success btn-lg btn-block">Place Order</button>
+        </div>
 
-                    <div class="input-group">
-                        <span class="input-group-addon">
-                            <input type="radio" name="cheese" checked>
-                        </span>
-                            <input type="text" class="form-control" value="Regular" readonly>
-                    </div>
+        <div class="col">
+            <button type="button" class="btn btn-outline-danger btn-lg btn-block">Reset</button>
+        </div>
+    </div>
+</div>
+<!-- Order Buttons -->
 
-                    <div class="input-group">
-                        <span class="input-group-addon">
-                            <input type="radio" name="cheese">
-                        </span>
-                            <input type="text" class="form-control" value="No Cheese" readonly>
-                    </div>
-
-                    <div class="input-group">
-                        <span class="input-group-addon">
-                            <input type="radio" name="cheese">
-                        </span>
-                            <input type="text" class="form-control" value="Extra Cheese" readonly>
-                    </div>
-            </div>
-            <!-- /Cheese -->
-
-
-
-
-
-
-        <p>
-        Base pizza price before ingredient modifications:
-        
-        
-            Personal pizza = $6.00<br>
-        
-            Medium pizza = $10.00<br>
-        
-            Large pizza = $14.00<br>
-        
-            XLarge pizza = $16.00<br>
-        </p>
-
-        <p>
-        Ingredient Modifier Pricing: The following ingredients if selected will be added to the base pizza price: Additional Meat items (first one is complementary):
-        
-        
-        <br>+$1.00 each additional meat items beyond the first complementary meat item
-        </p>
-
-        <p>
-        Additional Veggie items (first one is complementary):
-        
-        
-        <br>+$1.00 each additional veggie items beyond the first complementary veggie item
-        </p>
-
-        <p>
-        Extra Cheese:
-        
-        
-        <br>+$3.00 for any size pizza
-        </p>
-
-        <p>
-        Crust:
-        
-        
-        <br>+$3.00 for Cheese Stuffed Crust. All other crusts are complementary.
-        </p>
-        
+<br><br><br><br><br><br>
 
         <!-- jQuery first, then Tether, then Bootstrap JS. -->
         <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        <script src="./js/script.js"></script>
     </body>
 </html>
