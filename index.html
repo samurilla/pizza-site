@@ -25,13 +25,10 @@
 
 
 
-
-
 <!-- Pizza Options -->
 <div class="container">
 
-
-
+                
     <!-- Row 1 --><!-- Size -->
     <div class="row">
         <div class="col">
@@ -41,16 +38,16 @@
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     <div class="btn-group" data-toggle="buttons">
                         <label class="btn btn-primary active">
-                            <input type="radio" name="size" autocomplete="off" checked> Personal
+                            <input type="radio" name="size" value="personal" autocomplete="off" checked> Personal
                         </label>
                         <label class="btn btn-primary">
-                            <input type="radio" name="size" autocomplete="off"> Medium
+                            <input type="radio" name="size" value="medium" autocomplete="off"> Medium
                         </label>
                         <label class="btn btn-primary">
-                            <input type="radio" name="size" autocomplete="off"> Large
+                            <input type="radio" name="size" value="large" autocomplete="off"> Large
                         </label>
                         <label class="btn btn-primary">
-                            <input type="radio" name="size" autocomplete="off"> Extra Large
+                            <input type="radio" name="size" value="extra-large" autocomplete="off"> Extra Large
                         </label>
                     </div>
                 </div>
@@ -243,10 +240,8 @@
 
 <div class="card card-outline-primary mb-3 text-center">
         <div class="card-block">
-          <blockquote class="card-blockquote">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-            <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
-          </blockquote>
+          <blockquote class="card-blockquote" id="showText"></blockquote>
+          <blockquote class="card-blockquote" id="totalPrice"></blockquote>
         </div>
       </div>
 
@@ -257,11 +252,7 @@
 <div class="container">
     <div class="row">
         <div class="col">
-<button type="button" class="btn btn-success btn-lg btn-block">Place Order</button>
-        </div>
-
-        <div class="col">
-            <button type="button" class="btn btn-outline-danger btn-lg btn-block">Reset</button>
+            <button type="button" onclick="getReceipt()" class="btn btn-success btn-lg btn-block">Place Order</button>
         </div>
     </div>
 </div>
