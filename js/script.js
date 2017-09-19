@@ -26,7 +26,7 @@ function getReceipt(){
     console.log(selectedSize + " pizza selected");
     console.log("Basic total: $" + runningTotal + ".00");
 
-    getStuffedCrust(runningTotal);
+    getStuffedCrust(runningTotal);// passes variable to next funciton
 };
 
 
@@ -44,7 +44,7 @@ function getStuffedCrust(runningTotal){
     runningTotal = runningTotal + crustTotal;
     console.log("Total with stuffed crust: $" + runningTotal + ".00");
 
-    getCheese(runningTotal);
+    getCheese(runningTotal);// passes variable to next funciton
 };
 
 
@@ -62,7 +62,7 @@ function getCheese(runningTotal){
     runningTotal = runningTotal + cheeseTotal;
     console.log("Total with stuffed crust: $" + runningTotal + ".00");
 
-    getMeat(runningTotal);
+    getMeat(runningTotal);// passes variable to next funciton
 };
 
 
@@ -89,7 +89,7 @@ function getMeat(runningTotal){
     runningTotal = runningTotal + meatTotal;
     console.log("Total with meat: $" + runningTotal + ".00");
 
-    getNonMeat(runningTotal);
+    getNonMeat(runningTotal);// passes variable to next funciton
 };
 
 
