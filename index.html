@@ -35,7 +35,7 @@
             <div class="card">
                 <div class="card-block">
                     <h3 class="card-title text-center">Pizza Size</h3>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <br>
                     <div class="btn-group" data-toggle="buttons">
                         <label class="btn btn-primary active">
                             <input type="radio" name="size" value="personal" autocomplete="off" checked> Personal
@@ -66,7 +66,7 @@
             <div class="card">
                 <div class="card-block">
                     <h3 class="card-title text-center">Crust</h3>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <br>
                     <div class="btn-group" data-toggle="buttons">
                         <label class="btn btn-primary active">
                             <input type="radio" name="crust" autocomplete="off" checked> Plain Crust
@@ -75,7 +75,7 @@
                             <input type="radio" name="crust" autocomplete="off"> Garlic Butter Crust
                         </label>
                         <label class="btn btn-primary">
-                            <input type="radio" name="crust" autocomplete="off"> Cheese Stuffed Crust
+                            <input type="radio" name="crust" id="stuffed-crust" autocomplete="off"> Cheese Stuffed Crust
                         </label>
                         <label class="btn btn-primary">
                             <input type="radio" name="crust" autocomplete="off"> Spicy Crust
@@ -100,7 +100,7 @@
             <div class="card">
                 <div class="card-block">
                     <h3 class="card-title text-center">Cheese</h3>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <br>
                     <div class="btn-group" data-toggle="buttons">
                         <label class="btn btn-primary active">
                             <input type="radio" name="cheese" autocomplete="off" checked> Regular
@@ -109,7 +109,7 @@
                             <input type="radio" name="cheese" autocomplete="off"> No Cheese
                         </label>
                         <label class="btn btn-primary">
-                            <input type="radio" name="cheese" autocomplete="off"> Extra Cheese
+                            <input type="radio" name="cheese" id="extra-cheese" autocomplete="off"> Extra Cheese
                         </label>
                     </div>
                 </div>
@@ -128,7 +128,7 @@
             <div class="card">
                 <div class="card-block">
                     <h3 class="card-title text-center">Sauce</h3>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <br>
                     <div class="btn-group" data-toggle="buttons">
                         <label class="btn btn-primary active">
                             <input type="radio" name="sauce" autocomplete="off" checked> Marinara Sauce
@@ -159,25 +159,25 @@
             <div class="card">
                 <div class="card-block">
                     <h3 class="card-title text-center">Meat Toppings</h3>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <br>
                     <div class="btn-group" data-toggle="buttons">
                         <label class="btn btn-primary active">
-                            <input type="checkbox" checked autocomplete="off"> Pepperoni
+                            <input type="checkbox" name="meat" checked autocomplete="off"> Pepperoni
                         </label>
                         <label class="btn btn-primary">
-                            <input type="checkbox" autocomplete="off"> Sausage
+                            <input type="checkbox" name="meat" autocomplete="off"> Sausage
                         </label>
                         <label class="btn btn-primary">
-                            <input type="checkbox" autocomplete="off"> Canadian Bacon
+                            <input type="checkbox" name="meat" autocomplete="off"> Canadian Bacon
                         </label>
                         <label class="btn btn-primary">
-                            <input type="checkbox" autocomplete="off"> Ground Beef
+                            <input type="checkbox" name="meat" autocomplete="off"> Ground Beef
                         </label>
                         <label class="btn btn-primary">
-                            <input type="checkbox" autocomplete="off"> Anchovy
+                            <input type="checkbox" name="meat" autocomplete="off"> Anchovy
                         </label>
                         <label class="btn btn-primary">
-                            <input type="checkbox" autocomplete="off"> Chicken
+                            <input type="checkbox" name="meat" autocomplete="off"> Chicken
                         </label>
                     </div>
                 </div>
@@ -196,31 +196,31 @@
             <div class="card">
                 <div class="card-block">
                     <h3 class="card-title text-center">Non-Meat Toppings</h3>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <br>
                     <div class="btn-group" data-toggle="buttons">
                         <label class="btn btn-primary active">
-                            <input type="checkbox" checked autocomplete="off"> Tomatoes
+                            <input type="checkbox" name="non-meat" checked autocomplete="off"> Tomatoes
                         </label>
                         <label class="btn btn-primary">
-                            <input type="checkbox" autocomplete="off"> Onions
+                            <input type="checkbox" name="non-meat" autocomplete="off"> Onions
                         </label>
                         <label class="btn btn-primary">
-                            <input type="checkbox" autocomplete="off"> Olives
+                            <input type="checkbox" name="non-meat" autocomplete="off"> Olives
                         </label>
                         <label class="btn btn-primary">
-                            <input type="checkbox" autocomplete="off"> Green Peppers
+                            <input type="checkbox" name="non-meat" autocomplete="off"> Green Peppers
                         </label>
                         <label class="btn btn-primary">
-                            <input type="checkbox" autocomplete="off"> Mushrooms
+                            <input type="checkbox" name="non-meat" autocomplete="off"> Mushrooms
                         </label>
                         <label class="btn btn-primary">
-                            <input type="checkbox" autocomplete="off"> Pineapple
+                            <input type="checkbox" name="non-meat" autocomplete="off"> Pineapple
                         </label>
                         <label class="btn btn-primary">
-                            <input type="checkbox" autocomplete="off"> Spinach
+                            <input type="checkbox" name="non-meat" autocomplete="off"> Spinach
                         </label>
                         <label class="btn btn-primary">
-                            <input type="checkbox" autocomplete="off"> Jalapeno
+                            <input type="checkbox" name="non-meat" autocomplete="off"> Jalapeno
                         </label>
                     </div>
                 </div>
@@ -238,7 +238,7 @@
 
 <!-- Pizza Output -->
 
-<div class="card card-outline-primary mb-3 text-center">
+<div class="mb-3 text-center">
         <div class="card-block">
           <blockquote class="card-blockquote" id="showText"></blockquote>
           <blockquote class="card-blockquote" id="totalPrice"></blockquote>

@@ -1,5 +1,4 @@
 function getReceipt(){
-    var text1 = "<h3>You Ordered:</h3>";
     var runningTotal = 0;
     var sizeTotal = 0;
     var sizeArray = document.getElementsByName("size");
@@ -7,7 +6,6 @@ function getReceipt(){
     for(var i = 0; i < sizeArray.length; i++){
         if (sizeArray[i].checked){
             var selectedSize = sizeArray[i].value;
-            text1 = text1 + selectedSize + "<br>";
         }
     }
 
@@ -17,22 +15,59 @@ function getReceipt(){
     else if(selectedSize === "medium"){
         sizeTotal = 10;
     }
-    else if(selectedSize = "large"){
+    else if(selectedSize === "large"){
         sizeTotal = 14;
     }
-    else if(selectedSize = "extra-large"){
+    else if(selectedSize === "extra-large"){
         sizeTotal = 16;
     }
 
     runningTotal = sizeTotal;
-    console.log(selectedSize + " = $" + sizeTotal + ".00");
-    console.log("size text1: " + text1);
-    console.log("subtotal: $" + runningTotal + ".00");
-    getMeat(runningTotal, text1);
+    console.log(selectedSize + " pizza selected");
+    console.log("Basic total: $" + runningTotal + ".00");
+
+    getStuffedCrust(runningTotal);
 };
 
 
-function getMeat(runngingTotal, text1){
+
+function getStuffedCrust(runningTotal){
+    var crustTotal;
+
+    if(document.getElementById("stuffed-crust").checked){
+        crustTotal = 3;
+    }
+    else {
+        crustTotal = 0;
+    }
+
+    runningTotal = runningTotal + crustTotal;
+    console.log("Total with stuffed crust: $" + runningTotal + ".00");
+
+    getCheese(runningTotal);
+};
+
+
+
+function getCheese(runningTotal){
+    var cheeseTotal;
+
+    if(document.getElementById("extra-cheese").checked){
+        cheeseTotal = 3;
+    }
+    else {
+        cheeseTotal = 0;
+    }
+
+    runningTotal = runningTotal + cheeseTotal;
+    console.log("Total with stuffed crust: $" + runningTotal + ".00");
+
+    getMeat(runningTotal);
+};
+
+
+
+function getMeat(runningTotal){
     var meatTotal = 0;
     var selectedMeat = [];
     var meatArray = document.getElementsByName("meat");
@@ -40,8 +75,6 @@ function getMeat(runngingTotal, text1){
     for(var m = 0; m < meatArray.length; m++){
         if(meatArray[m].checked){
             selectedMeat.push(meatArray[m].value);  // .push adds the iterative value of meatArray to the end.
-            console.log("selected meat item: (" + meatArray[m].value + ")");
-            text1 = text1 + meatArray[m].value + "<br>";
         }
     }
 
@@ -53,15 +86,38 @@ function getMeat(runngingTotal, text1){
         meatTotal = 0;
     }
 
-    runningTotal = runngingTotal + meatTotal;
-    console.log("rt = " + runngingTotal);
-    document.getElementById("showText").innerHTML = text1;
-    document.getElementById("totalPrice").innerHTML = "</h3>Total <strong>$" + runningTotal + ".00" + "</strong></h3>";
+    runningTotal = runningTotal + meatTotal;
+    console.log("Total with meat: $" + runningTotal + ".00");
+
+    getNonMeat(runningTotal);
 };
 
 
 
-function test(){
-    // document.getElementById("form1").reset();
-    document.getElementsByClassName("first").classList += ('active');
+function getNonMeat(runningTotal){
+    var nonMeatTotal = 0;
+    var selectedNonMeat = [];
+    var nonMeatArray = document.getElementsByName("non-meat");
+
+    for(var n = 0; n < nonMeatArray.length; n++){
+        if(nonMeatArray[n].checked){
+            selectedNonMeat.push(nonMeatArray[n].value);  // .push adds the iterative value of nonMeatArray to the end.
+        }
+    }
+
+    var nonMeatCount = selectedNonMeat.length;
+    if (nonMeatCount > 1){
+        nonMeatTotal = (nonMeatCount - 1);
+    }
+    else {
+        nonMeatTotal = 0;
+    }
+
+    runningTotal = runningTotal + nonMeatTotal;
+    console.log("Total with non-meat: $" + runningTotal + ".00");
+
+    //get (runningTotal);
+
+    document.getElementById("totalPrice").innerHTML = "</h3>Total <strong>$" + runningTotal + ".00" + "</strong></h3>";
+    console.log("------------------------------------");
 };
